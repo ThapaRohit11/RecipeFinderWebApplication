@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function AdminLogin() {
   return (
@@ -29,6 +30,7 @@ function AdminLogin() {
             Login
           </button>
         </div>
+        <Footer/>
       </div>
     </>
   );
