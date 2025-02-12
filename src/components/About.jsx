@@ -1,8 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate(); // Initialize the navigate function
+  
+  const handleExploreClick = () => {
+      navigate("/recipes"); // Navigate to /recipes when button is clicked
+  };
+
   return (
     <div className="bg-red-500 min-h-screen">
       <Navbar />
@@ -56,7 +63,7 @@ function About() {
         <p className="text-lg text-white mb-6 max-w-2xl mx-auto">
           Ready to explore new recipes? Get started today and discover delicious dishes from all over the world.
         </p>
-        <button className="bg-white text-red-500 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+        <button onClick={handleExploreClick} className="bg-white text-red-500 px-6 py-3 rounded-lg font-bold hover:cursor-pointer hover:bg-gray-100 transition duration-300">
           Start Exploring Recipes
         </button>
       </div>
