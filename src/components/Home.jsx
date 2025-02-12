@@ -14,15 +14,6 @@ function Home() {
           <p className="text-lg text-white mt-4 max-w-2xl">
             Search and explore a variety of recipes tailored to your taste.
           </p>
-          
-          {/* Search Bar */}
-          <div className="mt-6 w-full max-w-md">
-            <input 
-              type="text" 
-              placeholder="Search for a recipe..." 
-              className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500"
-            />
-          </div>
 
           <button className="mt-6 bg-red-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition duration-300 ease-in-out transform hover:scale-105">
             Explore Recipes

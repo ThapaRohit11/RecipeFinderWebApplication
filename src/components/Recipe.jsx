@@ -54,9 +54,23 @@ function Recipe() {
   ];
 
   return (
-    <div className="bg-gray-50 p-6 min-h-screen">
+    <div className="bg-gray-50  min-h-screen">
       <Navbar />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+      {/* Search Bar */}
+      <div className='m-5'>
+      <div className="mt-6 w-full flex items-center border-2 border-red-500 rounded-lg ">
+      <input 
+        type="text" 
+        placeholder="Search for a recipe..." 
+        className="w-full p-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+      />
+      <button className="p-3 w-[300px] bg-red-500 text-white rounded-r-lg hover:bg-red-600 hover:cursor-pointer hover:transition duration-300 ease-in-out">
+        Search
+      </button>
+    </div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6 m-5">
         {recipes.map((recipe, index) => (
           <div
             key={index}
