@@ -7,7 +7,7 @@ export default function AddRecipe() {
       <AdminNav />
       
       {/* Add Recipe Form with Tailwind CSS */}
-      <div className="bg-orange-500 min-h-screen py-10">
+      <div className="bg-red-500 min-h-screen py-10">
         <div className="max-w-[1600px] mx-auto bg-white p-8 rounded-lg shadow-lg">
           <h1 className="text-3xl font-semibold text-center mb-12">Add a New Recipe</h1>
           <form>
